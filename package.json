@@ -1,0 +1,17 @@
+{
+  "name": "poe-archiver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portable, user-authenticated Poe conversation and media exporter",
+  "scripts": {
+    "start": "node archiver.mjs",
+    "launch": "node launch.mjs",
+    "batch": "node batch.mjs",
+    "validate": "node validate.mjs",
+    "check": "node --check archiver.mjs && node --check launch.mjs && node --check batch.mjs && node --check validate.mjs && node --check src/browser.mjs && node --check src/cdp.mjs && node --check src/exporter.mjs && node --check src/poe.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
